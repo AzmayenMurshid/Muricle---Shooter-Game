@@ -7,3 +7,4 @@ d: right
 SPACE: jump
 mouse left click: shoot
 mouse right click: grenades
+ESCAPE: Quit
