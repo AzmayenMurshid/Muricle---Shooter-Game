@@ -47,12 +47,6 @@ grenade_thrown = False
 
 #load music and sounds
 
-'''
-pygame.mixer.music.load('D:/PythonProjects/Games/ShooterGame/audio/music2.mp3')
-pygame.mixer.music.set_volume(0.3)
-pygame.mixer.music.play(-1, 0.0, 5000)
-'''
-
 jump_fx = pygame.mixer.Sound('D:/PythonProjects/Games/ShooterGame/audio/jump.wav')
 jump_fx.set_volume(0.5)
 
@@ -111,14 +105,6 @@ def draw_bg():
     width = background.get_width()
     for x in range(5):
         screen.blit(forest_img,((x * width) - bg_scroll * 0.5, 0))
-
-        '''
-        screen.blit(sky_img,((x * width) - bg_scroll * 0.5, 0))
-        screen.blit(mountain_img, ((x * width) - bg_scroll * 0.6, 0))
-        screen.blit(pine1_image, ((x * width) - bg_scroll * 0.7, SCREEN_HEIGHT - pine1_image.get_height() - 170))
-        screen.blit(pine2_image, ((x * width) - bg_scroll * 0.8, SCREEN_HEIGHT - pine2_image.get_height()))
-        '''
-
 
 # define font
 font = pygame.font.SysFont('Futura', 30)
